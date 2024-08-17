@@ -15,7 +15,7 @@ console.log(curriedJoin(1, 2)(3))
         if(args.length >= fn.length){
             return fn.apply(this, args)
         }else{
-            return fn.bind(this,...args)
+            return currying.bind(this,...args)
         }
     }
   }
