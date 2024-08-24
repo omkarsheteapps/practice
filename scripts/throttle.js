@@ -55,7 +55,7 @@
 
 // Throttling based on leading and trailing
 
-function throttle(func, delay, options = {leading: true, training: true}){
+function throttle(func, delay, options = {leading: true, trailing: true}){
 
     let lastTimerId;
     let lastArgs;
